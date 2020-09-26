@@ -60,3 +60,13 @@ footer {
     border-radius: 1em;
     padding: 5em;
 }
+@media (max-width: 800px) {
+    .flex-container {
+        height: 300px;
+        width: 300px;
+    }
+    .flex-container img {
+        height: 50px;
+        width: 50px;
+    }
+}
