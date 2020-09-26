@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style/style.css" />
     <title>Second Task</title>
-</head>
-<body>
+  </head>
+  <body>
     <form action="./first-task.html">
-    <button id="back_home" type="submit">Back</button>
-</form>
-</body>
+      <button id="back_home" type="submit">Back</button>
+    </form>
+    <div class="flex-container">
+      <img src="/style/img/link.jpg" alt="1" />
+      <img src="/style/img/link.jpg" alt="2" />
+      <img src="/style/img/link.jpg" alt="3" />
+      <img src="/style/img/link.jpg" alt="4" />
+      <img src="/style/img/link.jpg" alt="5" />
+    </div>
+
+    <form action="#">
+      <label for="first_name">First name</label>
+      <input type="first_name" name="first_name" id="" />
+      <label for="last_name">Last name</label>
+      <input type="first_name" name="last_name" id="" />
+      <fieldset>
+        <legend>Gender</legend>
+        <ul>
+          <li>
+            <input
+              type="radio"
+              name="gender"
+              id="male"
+              required
+            /><label for="male">Male</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="gender"
+              id="female"
+            /><label for="dinesh">Female</label>
+          </li>
+          <li>
+          <input
+          type="radio"
+          name="gender"
+          id="none"
+        /><label for="none">Rather not say</label>
+      </li>
+        </ul>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
