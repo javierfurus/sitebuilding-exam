@@ -1,0 +1,39 @@
+html, body {
+    height: 100%;
+    padding: 1em;
+}
+.grid-container {
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+    height: 100%;
+    box-shadow: 5em black;
+}
+header {
+    grid-column: span 5;
+    grid-row: 5/0;
+    background-color: aqua;
+    border: 3px solid black;
+}
+aside{
+    grid-column: 5;
+    grid-row: span 4;
+    background-color: brown;
+    border: 3px dotted black;
+}
+main {
+    grid-row: 2/6;
+    grid-column: span 4;
+    background-color: blanchedalmond;
+    border: 3px solid #cd9ef7;
+}
+footer {
+    grid-column: span 5;
+    grid-row:0/5;
+    background-color: red;
+    border: 3px solid #206b00;
+}
+#name {
+    color:#E33F2F;
+    text-decoration: none;
+    font-family: fantasy; 
+}
