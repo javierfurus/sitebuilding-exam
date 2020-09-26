@@ -1,72 +1,83 @@
-html, body {
-    height: 100%;
-    padding: 1em;
+html,
+body {
+  height: 100%;
+  padding: 1em;
 }
 .grid-container {
-    display: grid;
-    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
-    height: 100%;
-    box-shadow: 5em black;
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+  height: 100%;
+  box-shadow: 5em black;
 }
 .flex-container {
-    display: flex;
-    height: 500px;
-    width: 500px;
-    background-color: aliceblue;
-    justify-content: space-between;
-    flex-direction: column;
+  display: flex;
+  height: 500px;
+  width: 500px;
+  background-color: aliceblue;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .flex-container img {
-    height: 100px;
-    width: 100px;
+  height: 100px;
+  width: 100px;
 }
 .flex-container img:nth-of-type(1) {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 .flex-container img:nth-of-type(1) {
-    justify-self: flex-end;
+  justify-self: flex-end;
 }
 header {
-    grid-column: span 5;
-    grid-row: 5/0;
-    background-color: aqua;
-    border: 3px solid black;
+  grid-column: span 5;
+  grid-row: 5/0;
+  background-color: aqua;
+  border: 3px solid black;
 }
-aside{
-    grid-column: 5;
-    grid-row: span 4;
-    background-color: brown;
-    border: 3px dotted black;
+aside {
+  grid-column: 5;
+  grid-row: span 4;
+  background-color: brown;
+  border: 3px dotted black;
 }
 main {
-    grid-row: 2/6;
-    grid-column: span 4;
-    background-color: blanchedalmond;
-    border: 3px solid #cd9ef7;
+  grid-row: 2/6;
+  grid-column: span 4;
+  background-color: blanchedalmond;
+  border: 3px solid #cd9ef7;
 }
 footer {
-    grid-column: span 5;
-    grid-row:0/5;
-    background-color: red;
-    border: 3px solid #206b00;
+  grid-column: span 5;
+  grid-row: 0/5;
+  background-color: red;
+  border: 3px solid #206b00;
 }
 #name {
-    color:#E33F2F;
-    text-decoration: none;
-    font-family: fantasy; 
+  color: #e33f2f;
+  text-decoration: none;
+  font-family: fantasy;
 }
 #back_home {
-    background-color:#3689e6;
-    border-radius: 1em;
-    padding: 5em;
+  background-color: #3689e6;
+  border-radius: 1em;
+  padding: 5em;
 }
 @media (max-width: 800px) {
-    .flex-container {
-        height: 300px;
-        width: 300px;
-    }
-    .flex-container img {
-        height: 50px;
-        width: 50px;
-    }
+  .flex-container {
+    height: 300px;
+    width: 300px;
+  }
+  .flex-container img {
+    height: 50px;
+    width: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .flex-container {
+    height: 250px;
+    width: 250px;
+  }
+  .flex-container img {
+    height: 40px;
+    width: 40px;
+  }
 }
